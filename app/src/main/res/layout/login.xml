@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#0080FF"
+    android:layout_height="match_parent"
+    android:padding="30sp"
+    tools:context="hansa.com.bo.mvp_login.Views.Login">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="153dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_action_logo"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombreEmpresa"
+        android:textColor="@color/colorBlanco"
+        android:layout_margin="8sp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_action_person"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorBlanco"
+        android:hint="Usuario"
+        android:drawablePadding="8dp"
+      />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColorHint="@color/colorBlanco"
+        android:drawableLeft="@drawable/ic_action_accounts"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:drawablePadding="8dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="validacion"
+        android:textColor="@color/colorBlanco"
+        android:padding="10sp"
+        android:layout_margin="15sp"
+        android:background="@color/colorBtnMenu"
+        android:text="Ingresar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <TextView
+        android:id="@+id/txtVersion"
+        android:gravity="right"
+        android:textColor="@color/colorBlanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0.0" />
+
+
+</LinearLayout>
